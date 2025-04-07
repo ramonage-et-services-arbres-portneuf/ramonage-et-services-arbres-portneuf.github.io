@@ -1,9 +1,153 @@
+<!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <title>Ramonage et services d'arbres Portneuf</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <body>
-        <p>Construction en cours...</p>
-    </body>
+    <title>Ramonage et services d'arbres Portneuf</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        :root {
+            --main-green: #1a4731;
+            --main-gray: #f2f2f2;
+        }
+
+        .text-custom-green {
+            color: var(--main-green);
+        }
+
+        .bg-custom-gray {
+            background-color: var(--main-gray);
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(26, 71, 49, 0.90), rgba(26, 71, 49, 0.90)), url('https://picsum.photos/1200/600') no-repeat center center;
+            background-size: cover;
+            border-bottom: 5px solid var(--main-gray);
+        }
+
+        .hero-badge {
+            background-color: var(--main-gray);
+            color: var(--main-green);
+            padding: 0.25rem 1rem;
+            border-radius: 30px;
+            font-weight: bold;
+            display: inline-block;
+            margin: 0.25rem;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .service-icon {
+            font-size: 2.5rem;
+            color: var(--main-green);
+            margin-bottom: 1rem;
+        }
+
+        .img-container {
+            overflow: hidden;
+            border-radius: 0.25rem;
+            margin-bottom: 1rem;
+        }
+
+        body {
+            background: linear-gradient(rgba(255, 255, 255, 0.90), rgba(255, 255, 255, 0.90)), url('assets/wall_of_bricks.jpg') repeat;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="hero-section py-4 text-white">
+        <div class="container text-center py-4">
+            <h1 class="display-4 fw-bold mb-3">Ramonage et service d'arbres Portneuf</h1>
+            <div class="fst-italic mb-4">
+                « Pour une cheminée performante et sécuritaire.<br>
+                Nettoyage propre et en profondeur conforme aux exigences ! »
+            </div>
+            <div class="mb-4">
+                <span class="hero-badge"><i class="bi bi-shield-check me-1"></i> Pompier expérimenté</span>
+                <span class="hero-badge"><i class="bi bi-tags me-1"></i> Prix compétitifs</span>
+                <span class="hero-badge"><i class="bi bi-house-check me-1"></i> Service professionnel</span>
+            </div>
+            <a href="#contact" class="btn btn-lg btn-light mt-3">Contactez-nous</a>
+        </div>
+    </header>
+
+    <div class="container my-4">
+        <div id="contact" class="bg-custom-gray p-3 rounded text-center mb-4 shadow-lg">
+            <h2>Contactez-nous</h2>
+            <p class="mb-0">
+                <strong><i class="bi bi-geo-alt"></i> Adresse :</strong> 217 rue des Tulipes, Pont-Rouge, QC<br>
+                <strong><i class="bi bi-telephone"></i> Téléphone :</strong> 418-520-2424 et 418-559-7980
+            </p>
+        </div>
+
+        <h2 class="mb-4">Qu'est-ce que ramonage et services d'arbres Portneuf ?</h2>
+
+        <div class="row g-4">
+            <div class="col-12 col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <div class="img-container">
+                        <img src="https://picsum.photos/600/300" alt="Service de ramonage" class="card-img-top">
+                    </div>
+                    <div class="card-body text-center">
+                        <div class="service-icon">
+                            <i class="bi bi-fire"></i>
+                        </div>
+                        <h3 class="card-title">Ramonage</h3>
+                        <p class="card-text">
+                            Notre entreprise de ramonage est une entreprise familiale en pleine croissance, fondée par
+                            un père et son fils. Nous
+                            mettons un point d'honneur à respecter nos clients et à offrir un service de qualité, car
+                            nous croyons que la
+                            satisfaction de nos clients est essentielle à notre succès. Faites confiance à notre équipe
+                            pour prendre soin de votre
+                            cheminée avec professionnalisme et dévouement.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <div class="img-container">
+                        <img src="https://picsum.photos/600/300" alt="Service d'élagage d'arbres" class="card-img-top">
+                    </div>
+                    <div class="card-body text-center">
+                        <div class="service-icon">
+                            <i class="bi bi-tree"></i>
+                        </div>
+                        <h3 class="card-title">Élagage et abattage d'arbres</h3>
+                        <p class="card-text">
+                            En plus de nos services de ramonage, nous proposons également des services d'élagage
+                            d'arbres et d'abattage. Nous sommes
+                            là pour vous aider à entretenir vos espaces extérieurs pour garder celle-ce sécuritaire et
+                            en harmonie avec vos préférences.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center text-custom-green fs-4 my-5 py-4 bg-custom-gray rounded shadow-lg">
+            <i class="bi bi-telephone-outbound display-6"></i>
+            <p class="fw-bold mb-0">On attend votre appel !</p>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-1">© <span id="currentYear"></span> Ramonage et service d'arbres Portneuf - 217 rue des
+                Tulipes, Pont-Rouge, QC</p>
+            <p class="mb-0">418-520-2424 | 418-559-7980</p>
+        </div>
+    </footer>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js" rel="stylesheet">
+    <script>
+        document.getElementById("currentYear").innerText = new Date().getFullYear().toString();
+    </script>
+</body>
 </html>
